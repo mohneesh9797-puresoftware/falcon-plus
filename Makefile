@@ -1,5 +1,5 @@
 CMD = agent aggregator graph hbs judge nodata transfer gateway api alarm
-TARGET = mohneesh9797-puresoftware
+TARGET = open-falcon
 PACKAGES ?= $(shell go list ./... | grep -v /vendor/)
 GOFILES := $(shell find . -name "*.go" -type f -not -path "./vendor/*")
 GOFMT ?= gofmt "-s"
