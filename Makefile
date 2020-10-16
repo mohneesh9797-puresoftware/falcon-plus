@@ -5,7 +5,7 @@ GOFILES := $(shell find . -name "*.go" -type f -not -path "./vendor/*")
 GOFMT ?= gofmt "-s"
 VERSION := $(shell cat VERSION)
 
-all: $(CMD) $(TARGET)
+all: $(CMD) 
 
 .PHONY: misspell-check
 misspell-check:
