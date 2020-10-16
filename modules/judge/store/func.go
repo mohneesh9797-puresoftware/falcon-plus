@@ -16,8 +16,8 @@ package store
 
 import (
 	"fmt"
-	"github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/common/utils"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/common/model"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/common/utils"
 	"math"
 	"strconv"
 	"strings"

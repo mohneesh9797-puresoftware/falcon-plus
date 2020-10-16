@@ -20,7 +20,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/open-falcon/falcon-plus/g"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/g"
 	"github.com/spf13/cobra"
 )
 

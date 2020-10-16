@@ -15,8 +15,8 @@
 package sender
 
 import (
-	backend "github.com/open-falcon/falcon-plus/common/backend_pool"
-	"github.com/open-falcon/falcon-plus/modules/transfer/g"
+	backend "github.com/mohneesh9797-puresoftware/falcon-plus/common/backend_pool"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/transfer/g"
 	nset "github.com/toolkits/container/set"
 )
 
