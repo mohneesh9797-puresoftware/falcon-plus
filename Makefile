@@ -72,8 +72,8 @@ pack: checkbin
 	@cp -r ./modules/api/data ./out/api/
 	@mkdir out/graph/data
 	@bash ./config/confgen.sh
-	@cp $(TARGET) ./out/$(TARGET)
-	tar -C out -zcf mohneesh9797-puresoftware-v$(VERSION).tar.gz .
+	#@cp $(TARGET) ./out/$(TARGET)
+	tar -C out -zcf open-falcon-v$(VERSION).tar.gz .
 	@rm -rf out
 
 pack4docker: checkbin
@@ -92,7 +92,7 @@ pack4docker: checkbin
 	@bash ./docker/confgen4docker.sh
 	@cp ./docker/ctrl.sh ./out/ && chmod +x ./out/ctrl.sh
 	@cp $(TARGET) ./out/$(TARGET)
-	tar -C out -zcf mohneesh9797-puresoftware-v$(VERSION).tar.gz .
+	tar -C out -zcf open-falcon-v$(VERSION).tar.gz .
 	@rm -rf out
 
 .PHONY: test
@@ -103,6 +103,6 @@ clean:
 	@rm -rf ./bin
 	@rm -rf ./out
 	@rm -rf ./$(TARGET)
-	@rm -rf mohneesh9797-puresoftware-v$(VERSION).tar.gz
+	@rm -rf open-falcon-v$(VERSION).tar.gz
 
 .PHONY: clean all agent aggregator graph hbs judge nodata transfer gateway api alarm
