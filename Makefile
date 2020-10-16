@@ -54,7 +54,7 @@ $(CMD):
 
 .PHONY: $(TARGET)
 $(TARGET): $(GOFILES)
-	go build -ldflags "-X main.BinaryName=open-falcon -X main.GitCommit=`git rev-parse --short HEAD` -X main.Version=$(VERSION)" -o open-falcon
+	#go build -ldflags "-X main.BinaryName=open-falcon -X main.GitCommit=`git rev-parse --short HEAD` -X main.Version=$(VERSION)" -o open-falcon
 
 checkbin: bin/ config/ mohneesh9797-puresoftware
 
