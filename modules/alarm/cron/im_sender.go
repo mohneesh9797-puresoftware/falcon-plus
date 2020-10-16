@@ -15,7 +15,7 @@
 package cron
 
 import (
-	"github.com/mohneesh9797-puressoftware/falcon-plus/modules/alarm/g"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/alarm/g"
 	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/alarm/model"
 	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/alarm/redi"
 	log "github.com/sirupsen/logrus"
