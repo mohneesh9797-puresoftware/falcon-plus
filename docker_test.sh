@@ -13,7 +13,7 @@ cd mysql
 cd 5.7
 docker build -t mysql .
 cd ../../../
-docker rm -f falcon-mysql falcon-redis falcon-plus &> /dev/null
+#docker rm -f falcon-mysql falcon-redis falcon-plus &> /dev/null
 docker run --name falcon-mysql -e MYSQL_ROOT_PASSWORD=$DB_PASSWORD -p $DB_PORT:3306 -d mysql
 docker run --name falcon-redis -p $REDIS_PORT:6379 -d redis:4-alpine3.8
 
