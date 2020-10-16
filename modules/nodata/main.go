@@ -20,7 +20,7 @@ import (
 	"os"
 
 	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/nodata/collector"
-	"github.commohneesh9797-puresoftware/falcon-plus/modules/nodata/config"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/nodata/config"
 	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/nodata/g"
 	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/nodata/http"
 	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/nodata/judge"
