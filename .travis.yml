@@ -16,6 +16,7 @@ services:
 
 script:
   - make install
+  - make fmt
   - make fmt-check
   - make misspell-check
   - make all -d
