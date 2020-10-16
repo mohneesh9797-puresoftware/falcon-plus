@@ -308,7 +308,7 @@
 		},
 		{
 			"checksumSHA1": "I0kIkGOtYBit3XflqEqbEt+kuhQ=",
-			"path": "github.com/mohneesh9797-puresoftware/rrdlite",
+			"path": "github.com/open-falcon/rrdlite",
 			"revision": "7d8646c85cc56cad1f65d97abbe24fdfc1b88917",
 			"revisionTime": "2017-04-12T12:20:36Z"
 		},
