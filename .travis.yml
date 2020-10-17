@@ -13,12 +13,12 @@ services:
   - docker
 before install: 
 - wget https://golang.org/dl/go1.15.3.linux-arm64.tar.gz
-- tar -C /usr/local -xzf go1.15.3.linux-arm64.tar.gz
+- sudo tar -C /usr/local -xzf go1.15.3.linux-arm64.tar.gz
 - export PATH=$PATH:/usr/local/go/bin
 - go version
 - export GOPATH=/root
 - go env
-- mkdir $GOPATH/src/github.com/open-falcon/
+- sudo mkdir $GOPATH/src/github.com/open-falcon/
 - git clone https://github.com/mohneesh9797-puresoftware/falcon-plus
 - cd falcon-plus
 
