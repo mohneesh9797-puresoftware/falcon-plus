@@ -5,14 +5,22 @@ language: go
 arch:
     - amd64
     - arm64
-go:
-  - "1.8"
 
 env:
   - DB_USER=root DB_PASSWORD=test123456 DB_HOST=127.0.0.1 DB_PORT=13306 REDIS_HOST=127.0.0.1 REDIS_PORT=16379 API_PORT=18080 API_HOST=127.0.0.1
 
 services:
   - docker
+before install: 
+- wget https://golang.org/dl/go1.15.3.linux-arm64.tar.gz
+- tar -C /usr/local -xzf go1.15.3.linux-arm64.tar.gz
+- export PATH=$PATH:/usr/local/go/bin
+- go version
+- export GOPATH=/root
+- go env
+- mkdir $GOPATH/src/github.com/open-falcon/
+- git clone https://github.com/mohneesh9797-puresoftware/falcon-plus
+- cd falcon-plus
 
 script:
   - make install
