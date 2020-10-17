@@ -91,7 +91,7 @@ pack4docker: checkbin
 	@mkdir out/graph/data
 	@bash ./docker/confgen4docker.sh
 	@cp ./docker/ctrl.sh ./out/ && chmod +x ./out/ctrl.sh
-	@cp $(TARGET) ./out/$(TARGET)
+#	@cp $(TARGET) ./out/$(TARGET)
 	tar -C out -zcf open-falcon-v$(VERSION).tar.gz .
 	@rm -rf out
 
