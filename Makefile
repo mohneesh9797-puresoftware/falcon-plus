@@ -54,9 +54,9 @@ $(CMD):
 
 .PHONY: $(TARGET)
 $(TARGET): $(GOFILES)
-	#go build -ldflags "-X main.BinaryName=open-falcon -X main.GitCommit=`git rev-parse --short HEAD` -X main.Version=$(VERSION)" -o open-falcon
+	go build -ldflags "-X main.BinaryName=openfalcon -X main.GitCommit=`git rev-parse --short HEAD` -X main.Version=$(VERSION)" -o open-falcon .
 
-checkbin: bin/ config/ 
+checkbin: bin/ config/ open-falcon 
 
 pack: checkbin
 	@if [ -e out ] ; then rm -rf out; fi
@@ -72,8 +72,8 @@ pack: checkbin
 	@cp -r ./modules/api/data ./out/api/
 	@mkdir out/graph/data
 	@bash ./config/confgen.sh
-	#@cp $(TARGET) ./out/$(TARGET)
-	tar -C out -zcf open-falcon-v$(VERSION).tar.gz .
+	@cp $(TARGET) ./out/$(TARGET)
+	tar -C out -zcf mohneesh9797-puresoftware-v$(VERSION).tar.gz .
 	@rm -rf out
 
 pack4docker: checkbin
@@ -91,8 +91,8 @@ pack4docker: checkbin
 	@mkdir out/graph/data
 	@bash ./docker/confgen4docker.sh
 	@cp ./docker/ctrl.sh ./out/ && chmod +x ./out/ctrl.sh
-#	@cp $(TARGET) ./out/$(TARGET)
-	tar -C out -zcf open-falcon-v$(VERSION).tar.gz .
+ 	@cp $(TARGET) ./out/$(TARGET)
+	tar -C out -zcf mohneesh9797-puresoftware-v$(VERSION).tar.gz .
 	@rm -rf out
 
 .PHONY: test
@@ -103,6 +103,6 @@ clean:
 	@rm -rf ./bin
 	@rm -rf ./out
 	@rm -rf ./$(TARGET)
-	@rm -rf open-falcon-v$(VERSION).tar.gz
+	@rm -rf mohneesh9797-puresoftware-v$(VERSION).tar.gz
 
 .PHONY: clean all agent aggregator graph hbs judge nodata transfer gateway api alarm
