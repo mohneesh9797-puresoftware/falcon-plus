@@ -25,11 +25,11 @@ before install:
 - cd falcon-plus
 
 script:
-  - make install
-  - make fmt
-  - make fmt-check
-  - make misspell-check
-  - make all -d
+  - sudo make install
+  - sudo make fmt
+  - sudo make fmt-check
+  - sudo make misspell-check
+  - sudo make all -d
   - bash ./docker_test.sh
  
 
