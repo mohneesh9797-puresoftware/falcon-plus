@@ -8,7 +8,7 @@ export REDIS_HOST=127.0.0.1
 export REDIS_PORT=16379
 export API_PORT=18080
 export API_HOST=127.0.0.1
-git clone https://github.com/mohneesh9797-puresoftware/mysql
+#git clone https://github.com/mohneesh9797-puresoftware/mysql
 #cd mysql
 #cd 5.7
 #docker build -t mysql .
