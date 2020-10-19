@@ -56,7 +56,7 @@ $(CMD):
 $(TARGET): $(GOFILES)
 	go build -ldflags "-X main.BinaryName=mohneesh9797-puresoftware -X main.GitCommit=`git rev-parse --short HEAD` -X main.Version=$(VERSION)" -o mohneesh9797-puresoftware
 
-checkbin: bin/ config/ open-falcon
+checkbin: bin/ config/ mohneesh9797-puresoftware
 
 pack: checkbin
 	@if [ -e out ] ; then rm -rf out; fi
