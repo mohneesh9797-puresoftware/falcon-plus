@@ -17,7 +17,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/open-falcon/falcon-plus/common/utils"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/common/utils"
 	ttime "github.com/toolkits/time"
 )
 

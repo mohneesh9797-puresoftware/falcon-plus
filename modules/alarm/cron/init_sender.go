@@ -15,7 +15,7 @@
 package cron
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/alarm/g"
 )
 
 var (
