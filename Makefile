@@ -1,5 +1,5 @@
 CMD = agent aggregator graph hbs judge nodata transfer gateway api alarm
-TARGET = open-falcon
+TARGET = mohneesh9797-puresoftware
 PACKAGES ?= $(shell go list ./... | grep -v /vendor/)
 GOFILES := $(shell find . -name "*.go" -type f -not -path "./vendor/*")
 GOFMT ?= gofmt "-s"
@@ -54,7 +54,7 @@ $(CMD):
 
 .PHONY: $(TARGET)
 $(TARGET): $(GOFILES)
-	go build -ldflags "-X main.BinaryName=Open-Falcon -X main.GitCommit=`git rev-parse --short HEAD` -X main.Version=$(VERSION)" -o open-falcon
+	go build -ldflags "-X main.BinaryName=mohneesh9797-puresoftware -X main.GitCommit=`git rev-parse --short HEAD` -X main.Version=$(VERSION)" -o mohneesh9797-puresoftware
 
 checkbin: bin/ config/ open-falcon
 
