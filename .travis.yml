@@ -12,7 +12,10 @@ env:
 services:
   - docker
 
-before-script: sudo mkdir /home/travis/gopath/src/github.com/open-falcon
+before-script: 
+- sudo mkdir /home/travis/gopath/src/github.com/open-falcon
+- cp -r /home/travis/gopath/src/github.com/mohneesh9797-puresoftware/falcon-plus /home/travis/gopath/src/github.com/open-falcon/
+- ls
 script:
   - make install
   - make fmt
