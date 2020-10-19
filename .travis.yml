@@ -16,6 +16,7 @@ before-script:
 - sudo mkdir /home/travis/gopath/src/github.com/open-falcon
 - sudo cp -r /home/travis/gopath/src/github.com/mohneesh9797-puresoftware/falcon-plus /home/travis/gopath/src/github.com/open-falcon
 - ls /home/travis/gopath/src/github.com/open-falcon/
+- chmod -R 666 /home/travis/gopath/src/github.com/open-falcon/
 - cd /home/travis/gopath/src/github.com/open-falcon/falcon-plus 
 script:
   - make install
