@@ -14,11 +14,11 @@ services:
 
 
 script:
-  - sudo make install
-  - sudo make fmt
-  - sudo make fmt-check
-  - sudo make misspell-check
-  - sudo make all -d
+  - make install
+  - make fmt
+  - make fmt-check
+  - make misspell-check
+  - make all -d
   - bash ./docker_test.sh
  
 
