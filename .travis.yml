@@ -14,8 +14,9 @@ services:
 
 before-script: 
 - sudo mkdir /home/travis/gopath/src/github.com/open-falcon
-- sudo cp -r /home/travis/gopath/src/github.com/mohneesh9797-puresoftware/falcon-plus /home/travis/gopath/src/github.com/open-falcon/
+- sudo cp -r /home/travis/gopath/src/github.com/mohneesh9797-puresoftware/falcon-plus home/travis/gopath/src/github.com/open-falcon
 - ls
+- cd home/travis/gopath/src/github.com/open-falcon/falcon-plus 
 script:
   - make install
   - make fmt
