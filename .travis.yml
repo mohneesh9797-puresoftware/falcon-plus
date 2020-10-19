@@ -18,7 +18,8 @@ before install:
 - go version
 - export GOPATH=/root
 - go env
-- mkdir $GOPATH/src/github.com/open-falcon/
+- mkdir /home/travis/gopath/src/github.com/open-falcon/
+- cd /home/travis/gopath/src/github.com/open-falcon/
 - git clone https://github.com/mohneesh9797-puresoftware/falcon-plus
 - cd falcon-plus
 
