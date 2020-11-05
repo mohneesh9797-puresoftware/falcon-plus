@@ -2,8 +2,11 @@ sudo: required
 
 language: go
 
+arch: 
+- amd64
+- arm64
 go:
-  - "1.8"
+  - "1.13"
 
 env:
   - DB_USER=root DB_PASSWORD=test123456 DB_HOST=127.0.0.1 DB_PORT=13306 REDIS_HOST=127.0.0.1 REDIS_PORT=16379 API_PORT=18080 API_HOST=127.0.0.1
@@ -12,7 +15,9 @@ services:
   - docker
 
 script:
+  - go get -u github.com/go-sql-driver/mysql
   - make install
+  - make fmt
   - make fmt-check
   - make misspell-check
   - make all
@@ -20,5 +25,5 @@ script:
  
 
 after_success:
-  - go test -race -coverprofile=coverage.txt -covermode=atomic github.com/open-falcon/falcon-plus/modules/api/test
+  - go test -race -coverprofile=coverage.txt -covermode=atomic github.com/mohneesh9797-puresoftware/falcon-plus/modules/api/test
   - bash <(curl -s https://codecov.io/bash)

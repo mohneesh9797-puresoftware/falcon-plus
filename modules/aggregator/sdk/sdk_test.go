@@ -17,7 +17,7 @@ package sdk
 import (
 	"testing"
 
-	"github.com/open-falcon/falcon-plus/modules/aggregator/g"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/modules/aggregator/g"
 	. "github.com/smartystreets/goconvey/convey"
 )
 

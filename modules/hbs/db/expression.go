@@ -16,7 +16,7 @@ package db
 
 import (
 	"fmt"
-	"github.com/open-falcon/falcon-plus/common/model"
+	"github.com/mohneesh9797-puresoftware/falcon-plus/common/model"
 	"log"
 	"strings"
 )

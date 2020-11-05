@@ -20,9 +20,9 @@ import (
 
 	"github.com/emirpasic/gods/maps/hashmap"
 	"github.com/gin-gonic/gin"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	m "github.com/open-falcon/falcon-plus/modules/api/app/model/graph"
+	cmodel "github.com/mohneesh9797-puresoftware/falcon-plus/common/model"
+	h "github.com/mohneesh9797-puresoftware/falcon-plus/modules/api/app/helper"
+	m "github.com/mohneesh9797-puresoftware/falcon-plus/modules/api/app/model/graph"
 	log "github.com/sirupsen/logrus"
 )
 

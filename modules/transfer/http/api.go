@@ -16,8 +16,8 @@ package http
 
 import (
 	"encoding/json"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	prpc "github.com/open-falcon/falcon-plus/modules/transfer/receiver/rpc"
+	cmodel "github.com/mohneesh9797-puresoftware/falcon-plus/common/model"
+	prpc "github.com/mohneesh9797-puresoftware/falcon-plus/modules/transfer/receiver/rpc"
 	"net/http"
 )
 
