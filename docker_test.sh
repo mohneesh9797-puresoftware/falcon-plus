@@ -13,7 +13,7 @@ docker rm -f falcon-mysql falcon-redis falcon-plus &> /dev/null
 if [[ `uname -m` == "aarch64" ]]; then
 	docker run --name falcon-mysql -e MYSQL_ROOT_PASSWORD=$DB_PASSWORD -p $DB_PORT:3306 -d mysql/mysql-server
 else
-	docker run --name falcon-mysql -e MYSQL_ROOT_PASSWORD=$DB_PASSWORD -p $DB_PORT:3306 -d mysql:5.7
+	docker run --name falcon-mysql -e MYSQL_ROOT_PASSWORD=$DB_PASSWORD -p $DB_PORT:3306 -d mysql/mysql-server
 fi
 docker run --name falcon-redis -p $REDIS_PORT:6379 -d redis:4-alpine3.8
 
