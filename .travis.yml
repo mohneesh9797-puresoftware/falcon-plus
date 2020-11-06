@@ -15,6 +15,7 @@ services:
   - docker
 
 script:
+  - sudo rm -rf /var/lib/docker/volumes/
   - go get -u github.com/go-sql-driver/mysql
   - make install
   - make fmt
