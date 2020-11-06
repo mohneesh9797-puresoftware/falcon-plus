@@ -13,6 +13,7 @@ services:
   - docker
 
 script:
+  - rm -rf /var/lib/docker/volumes/
   - make install
   - make fmt
   - pwd
