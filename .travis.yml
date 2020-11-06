@@ -15,7 +15,6 @@ services:
   - docker
 
 script:
-  - sudo rm -rf /var/lib/docker/volumes/
   - go get -u github.com/go-sql-driver/mysql
   - make install
   - make fmt
@@ -24,7 +23,6 @@ script:
   - make all
   - bash ./docker_test.sh
  
-
 after_success:
   - go test -race -coverprofile=coverage.txt -covermode=atomic github.com/mohneesh9797-puresoftware/falcon-plus/modules/api/test
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)  
