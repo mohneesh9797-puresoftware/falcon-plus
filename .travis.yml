@@ -13,8 +13,9 @@ env:
 
 services:
   - docker
-
+  - mysql
 script:
+  - mysql --version
   - go get -u github.com/go-sql-driver/mysql
   - make install
   - make fmt
